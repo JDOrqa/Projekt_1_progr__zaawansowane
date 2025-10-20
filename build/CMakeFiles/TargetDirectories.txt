@@ -1,0 +1,3 @@
+C:/Users/simon/OneDrive/Pulpit/Programowanie_za/projekt_kod/build/CMakeFiles/dllist.dir
+C:/Users/simon/OneDrive/Pulpit/Programowanie_za/projekt_kod/build/CMakeFiles/edit_cache.dir
+C:/Users/simon/OneDrive/Pulpit/Programowanie_za/projekt_kod/build/CMakeFiles/rebuild_cache.dir
