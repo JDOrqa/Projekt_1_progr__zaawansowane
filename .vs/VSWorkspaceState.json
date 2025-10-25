@@ -7,9 +7,12 @@
   },
   "ExpandedNodes": [
     "",
+    "\\build",
+    "\\build\\CMakeFiles",
+    "\\build\\CMakeFiles\\3.29.5-msvc4",
     "\\include",
     "\\src"
   ],
-  "SelectedNode": "\\include\\Iterator.h",
+  "SelectedNode": "\\include",
   "PreviewInSolutionExplorer": false
 }

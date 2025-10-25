@@ -2,19 +2,10 @@
 #define  DWUKIERUNKOWA_LISTA_H
 
 #include "NodeFactory.h"
-#include "Iterator.h"
 #include <iostream>
 #include <stdexcept>
 
-/**
- * @brief Prosta implementacja listy dwukierunkowej (heap allocation).
- * W tej czêœci implementujemy podstawowe operacje: push_front/back, pop_front/back,
- * display_forward/reverse, clear, size, empty.
- *
- * Metody zwi¹zane z indeksem zostan¹ dodane w drugiej czêœci.
- */
 
-//w dwiekierunkowej tez do pliku Dwukierunkowa.cpp poprzerzucac
 template<typename T>
 class DwukierunkowaLista {
 public:
@@ -100,14 +91,7 @@ public:
         std::cout << "]\n";
     }
 
-    DoublyListIterator<T> begin() { return DoublyListIterator<T>(head); }
-    DoublyListIterator<T> end() { return DoublyListIterator<T>(nullptr); }
-
-    // const overloads (opcjonalne)
-    DoublyListIterator<T> begin() const { return DoublyListIterator<T>(head); }
-    DoublyListIterator<T> end() const { return DoublyListIterator<T>(nullptr); }
-
-
+    
     Node<T>* getHead() const { return head; }
     Node<T>* getTail() const { return tail; }
 
