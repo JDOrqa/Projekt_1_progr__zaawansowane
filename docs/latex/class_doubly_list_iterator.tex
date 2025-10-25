@@ -1,0 +1,167 @@
+\doxysection{Dokumentacja szablonu klasy Doubly\+List\+Iterator\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}}
+\hypertarget{class_doubly_list_iterator}{}\label{class_doubly_list_iterator}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+
+
+Szablonowy iterator klasy Doubly\+Linked\+List.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+\doxysubsubsection*{Typy publiczne}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_doubly_list_iterator_acbc89a06d2d8f9d731bc568792bf3518}{iterator\+\_\+category}} = std\+::bidirectional\+\_\+iterator\+\_\+tag
+\item 
+using \mbox{\hyperlink{class_doubly_list_iterator_addc30298ab01c6fc8ffefea1a391e59a}{value\+\_\+type}} = T
+\item 
+using \mbox{\hyperlink{class_doubly_list_iterator_a038836631952085763e93562d8382a39}{reference}} = T\&
+\item 
+using \mbox{\hyperlink{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}{pointer}} = T\texorpdfstring{$\ast$}{*}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{Doubly\+List\+Iterator}} (\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator_a038836631952085763e93562d8382a39}{reference}} \mbox{\hyperlink{class_doubly_list_iterator_ac72b43c7ab0aaa7dbf20c2d33f9cfdeb}{operator\texorpdfstring{$\ast$}{*}}} () const
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}{pointer}} \mbox{\hyperlink{class_doubly_list_iterator_a4949aee2d5c491aab4faab9697544f01}{operator-\/$>$}} () const
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \& \mbox{\hyperlink{class_doubly_list_iterator_a96c353f7e600406bd72db5a69fd81c9e}{operator++}} ()
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \mbox{\hyperlink{class_doubly_list_iterator_a9915913d17070af19574070fcb839818}{operator++}} (int)
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \& \mbox{\hyperlink{class_doubly_list_iterator_a2cf5c9b36286d9fe9be379427d1a732a}{operator-\/-\/}} ()
+\item 
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \mbox{\hyperlink{class_doubly_list_iterator_afa502cc32ba8b47a9f63c29f58e1eb48}{operator-\/-\/}} (int)
+\item 
+bool \mbox{\hyperlink{class_doubly_list_iterator_a49250f8cd95090857928df6d2c47c539}{operator==}} (const \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \&other) const
+\item 
+bool \mbox{\hyperlink{class_doubly_list_iterator_a410e76d66de629cc20756bf850a9af49}{operator!=}} (const \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}} \&other) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\subsubsection*{template$<$typename T$>$\newline
+class Doubly\+List\+Iterator$<$ T $>$}
+Szablonowy iterator klasy Doubly\+Linked\+List. 
+
+
+\begin{DoxyTemplParams}{Parametry Szablonu}
+{\em T} & Typ danych przechowywanych w li�cie. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-typedef-members}
+\Hypertarget{class_doubly_list_iterator_doc-typedef-members}
+\doxysubsection{Dokumentacja składowych definicji typu}
+\Hypertarget{class_doubly_list_iterator_acbc89a06d2d8f9d731bc568792bf3518}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_acbc89a06d2d8f9d731bc568792bf3518} 
+template$<$typename T$>$ \\
+using \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::iterator\+\_\+category = std\+::bidirectional\+\_\+iterator\+\_\+tag}
+
+\Hypertarget{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!pointer@{pointer}}
+\index{pointer@{pointer}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5} 
+template$<$typename T$>$ \\
+using \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::pointer = T\texorpdfstring{$\ast$}{*}}
+
+\Hypertarget{class_doubly_list_iterator_a038836631952085763e93562d8382a39}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!reference@{reference}}
+\index{reference@{reference}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a038836631952085763e93562d8382a39} 
+template$<$typename T$>$ \\
+using \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::reference = T\&}
+
+\Hypertarget{class_doubly_list_iterator_addc30298ab01c6fc8ffefea1a391e59a}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_addc30298ab01c6fc8ffefea1a391e59a} 
+template$<$typename T$>$ \\
+using \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::value\+\_\+type = T}
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_doubly_list_iterator_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!DoublyListIterator@{DoublyListIterator}}
+\index{DoublyListIterator@{DoublyListIterator}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DoublyListIterator()}{DoublyListIterator()}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::\+Doubly\+List\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{ptr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_doubly_list_iterator_doc-func-members}
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_doubly_list_iterator_a410e76d66de629cc20756bf850a9af49}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a410e76d66de629cc20756bf850a9af49} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_doubly_list_iterator_ac72b43c7ab0aaa7dbf20c2d33f9cfdeb}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_ac72b43c7ab0aaa7dbf20c2d33f9cfdeb} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\mbox{\hyperlink{class_doubly_list_iterator_a038836631952085763e93562d8382a39}{\+::reference}} \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_doubly_list_iterator_a96c353f7e600406bd72db5a69fd81c9e}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a96c353f7e600406bd72db5a69fd81c9e} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \& \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_doubly_list_iterator_a9915913d17070af19574070fcb839818}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a9915913d17070af19574070fcb839818} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_doubly_list_iterator_a2cf5c9b36286d9fe9be379427d1a732a}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a2cf5c9b36286d9fe9be379427d1a732a} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \& \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_doubly_list_iterator_afa502cc32ba8b47a9f63c29f58e1eb48}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_afa502cc32ba8b47a9f63c29f58e1eb48} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_doubly_list_iterator_a4949aee2d5c491aab4faab9697544f01}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a4949aee2d5c491aab4faab9697544f01} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\mbox{\hyperlink{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}{\+::pointer}} \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_doubly_list_iterator_a49250f8cd95090857928df6d2c47c539}\index{DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!DoublyListIterator$<$ T $>$@{DoublyListIterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_doubly_list_iterator_a49250f8cd95090857928df6d2c47c539} 
+template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_doubly_list_iterator}{Doubly\+List\+Iterator}}$<$ T $>$ \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_iterator_8h}{Iterator.\+h}}\item 
+src/\mbox{\hyperlink{_iterator_8cpp}{Iterator.\+cpp}}\end{DoxyCompactItemize}
