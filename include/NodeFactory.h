@@ -1,24 +1,33 @@
+/**
+ * @file NodeFactory.h
+ * @brief Deklaracja klasy NodeFactory – wzorzec fabryki do tworzenia wêz³ów listy.
+ * @date 2025-10-25
+ */
+
 #ifndef NODE_FACTORY_H
 #define NODE_FACTORY_H
 
 #include "Node.h"
-
-/**
- * @brief Prosta fabryka wêz³ów — wzorzec Factory.
- * Pozwala odseparowaæ tworzenie wêz³ów (przydatne np. do testów, mocków itp.)
- */
-
+ /**
+  * @brief Szablonowa klasa fabryczna tworz¹ca i usuwaj¹ca wêz³y listy.
+  * @tparam T Typ danych przechowywany w wêŸle.
+  */
 template<typename T>
 class NodeFactory {
 public:
-    static Node<T>* createNode(const T& value) {
-        return new Node<T>(value);
-    }
+    /**
+    * @brief Tworzy nowy wêze³ z podan¹ wartoœci¹.
+    * @param value Wartoœæ do zapisania w wêŸle.
+    * @return WskaŸnik na nowy wêze³.
+    */
 
-    
-    static void destroyNode(Node<T>* node) {
-        delete node;
-    }
+    static Node<T>* createNode(const T& value);
+    static void destroyNode(Node<T>* node);
+    /**
+    * @brief Usuwa wskazany wêze³ z pamiêci.
+    * @param node WskaŸnik na wêze³ do usuniêcia.
+    */
 };
 
-#endif 
+#endif // NODE_FACTORY_H
+

@@ -1,0 +1,67 @@
+\doxysection{Dokumentacja szablonu klasy Node\+Factory\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}}
+\hypertarget{class_node_factory}{}\label{class_node_factory}\index{NodeFactory$<$ T $>$@{NodeFactory$<$ T $>$}}
+
+
+Szablonowa klasa fabryczna tworz¹ca i usuwaj¹ca wêz³y listy.  
+
+
+
+
+{\ttfamily \#include $<$Node\+Factory.\+h$>$}
+
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_factory_a1a489d2536e2329522feaed7b56e8d82}{create\+Node}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Tworzy nowy wêze³ z podan¹ wartoœci¹. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_node_factory_ab79d018b0c0cc0cffddc6c2eb890510e}{destroy\+Node}} (\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegÃ³Å‚owy}
+\subsubsection*{template$<$typename T$>$\newline
+class Node\+Factory$<$ T $>$}
+Szablonowa klasa fabryczna tworz¹ca i usuwaj¹ca wêz³y listy. 
+
+
+\begin{DoxyTemplParams}{Parametry Szablonu}
+{\em T} & Typ danych przechowywany w wêŸle. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_node_factory_doc-func-members}
+\doxysubsection{Dokumentacja funkcji skÅ‚adowych}
+\Hypertarget{class_node_factory_a1a489d2536e2329522feaed7b56e8d82}\index{NodeFactory$<$ T $>$@{NodeFactory$<$ T $>$}!createNode@{createNode}}
+\index{createNode@{createNode}!NodeFactory$<$ T $>$@{NodeFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{createNode()}{createNode()}}
+{\footnotesize\ttfamily \label{class_node_factory_a1a489d2536e2329522feaed7b56e8d82} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_node_factory}{Node\+Factory}}$<$ T $>$\+::create\+Node (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tworzy nowy wêze³ z podan¹ wartoœci¹. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em value} & Wartoœæ do zapisania w wêŸle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+WskaŸnik na nowy wêze³. 
+\end{DoxyReturn}
+\Hypertarget{class_node_factory_ab79d018b0c0cc0cffddc6c2eb890510e}\index{NodeFactory$<$ T $>$@{NodeFactory$<$ T $>$}!destroyNode@{destroyNode}}
+\index{destroyNode@{destroyNode}!NodeFactory$<$ T $>$@{NodeFactory$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{destroyNode()}{destroyNode()}}
+{\footnotesize\ttfamily \label{class_node_factory_ab79d018b0c0cc0cffddc6c2eb890510e} 
+template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_node_factory}{Node\+Factory}}$<$ T $>$\+::destroy\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dokumentacja dla tej klasy zostaÅ‚a wygenerowana z plikÃ³w\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_node_factory_8h}{Node\+Factory.\+h}}\item 
+src/\mbox{\hyperlink{_node_factory_8cpp}{Node\+Factory.\+cpp}}\end{DoxyCompactItemize}
