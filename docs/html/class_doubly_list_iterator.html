@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lista dwukierunkowa - Projekt C++: Dokumentacja szablonu klasy DoublyListIterator&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lista dwukierunkowa - Projekt C++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_doubly_list_iterator.html','','class_doubly_list_iterator-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja szablonu klasy DoublyListIterator&lt; T &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Szablonowy iterator klasy DoublyLinkedList.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_iterator_8h_source.html">Iterator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Typy publiczne</h2></td></tr>
+<tr class="memitem:acbc89a06d2d8f9d731bc568792bf3518" id="r_acbc89a06d2d8f9d731bc568792bf3518"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc89a06d2d8f9d731bc568792bf3518">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
+<tr class="memitem:addc30298ab01c6fc8ffefea1a391e59a" id="r_addc30298ab01c6fc8ffefea1a391e59a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc30298ab01c6fc8ffefea1a391e59a">value_type</a> = T</td></tr>
+<tr class="memitem:a038836631952085763e93562d8382a39" id="r_a038836631952085763e93562d8382a39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a038836631952085763e93562d8382a39">reference</a> = T&amp;</td></tr>
+<tr class="memitem:a8cd954401a9b71a1c60c3e2853d5cce5" id="r_a8cd954401a9b71a1c60c3e2853d5cce5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cd954401a9b71a1c60c3e2853d5cce5">pointer</a> = T*</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a57f87b8fcfe9f4519f80b161397a8baf" id="r_a57f87b8fcfe9f4519f80b161397a8baf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57f87b8fcfe9f4519f80b161397a8baf">DoublyListIterator</a> (<a class="el" href="struct_node.html">Node</a>&lt; T &gt; *ptr)</td></tr>
+<tr class="memitem:ac72b43c7ab0aaa7dbf20c2d33f9cfdeb" id="r_ac72b43c7ab0aaa7dbf20c2d33f9cfdeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a038836631952085763e93562d8382a39">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac72b43c7ab0aaa7dbf20c2d33f9cfdeb">operator*</a> () const</td></tr>
+<tr class="memitem:a4949aee2d5c491aab4faab9697544f01" id="r_a4949aee2d5c491aab4faab9697544f01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8cd954401a9b71a1c60c3e2853d5cce5">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4949aee2d5c491aab4faab9697544f01">operator-&gt;</a> () const</td></tr>
+<tr class="memitem:a96c353f7e600406bd72db5a69fd81c9e" id="r_a96c353f7e600406bd72db5a69fd81c9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96c353f7e600406bd72db5a69fd81c9e">operator++</a> ()</td></tr>
+<tr class="memitem:a9915913d17070af19574070fcb839818" id="r_a9915913d17070af19574070fcb839818"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9915913d17070af19574070fcb839818">operator++</a> (int)</td></tr>
+<tr class="memitem:a2cf5c9b36286d9fe9be379427d1a732a" id="r_a2cf5c9b36286d9fe9be379427d1a732a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cf5c9b36286d9fe9be379427d1a732a">operator--</a> ()</td></tr>
+<tr class="memitem:afa502cc32ba8b47a9f63c29f58e1eb48" id="r_afa502cc32ba8b47a9f63c29f58e1eb48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa502cc32ba8b47a9f63c29f58e1eb48">operator--</a> (int)</td></tr>
+<tr class="memitem:a49250f8cd95090857928df6d2c47c539" id="r_a49250f8cd95090857928df6d2c47c539"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49250f8cd95090857928df6d2c47c539">operator==</a> (const <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a> &amp;other) const</td></tr>
+<tr class="memitem:a410e76d66de629cc20756bf850a9af49" id="r_a410e76d66de629cc20756bf850a9af49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a410e76d66de629cc20756bf850a9af49">operator!=</a> (const <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a> &amp;other) const</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class DoublyListIterator&lt; T &gt;</div><p>Szablonowy iterator klasy DoublyLinkedList. </p>
+<dl class="tparams"><dt>Parametry Szablonu</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Typ danych przechowywanych w li�cie. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Dokumentacja składowych definicji typu</h2>
+<a id="acbc89a06d2d8f9d731bc568792bf3518" name="acbc89a06d2d8f9d731bc568792bf3518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc89a06d2d8f9d731bc568792bf3518">&#9670;&#160;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::iterator_category = std::bidirectional_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cd954401a9b71a1c60c3e2853d5cce5" name="a8cd954401a9b71a1c60c3e2853d5cce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd954401a9b71a1c60c3e2853d5cce5">&#9670;&#160;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::pointer = T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038836631952085763e93562d8382a39" name="a038836631952085763e93562d8382a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038836631952085763e93562d8382a39">&#9670;&#160;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::reference = T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addc30298ab01c6fc8ffefea1a391e59a" name="addc30298ab01c6fc8ffefea1a391e59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc30298ab01c6fc8ffefea1a391e59a">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::value_type = T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a57f87b8fcfe9f4519f80b161397a8baf" name="a57f87b8fcfe9f4519f80b161397a8baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f87b8fcfe9f4519f80b161397a8baf">&#9670;&#160;</a></span>DoublyListIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::DoublyListIterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_node.html">Node</a>&lt; T &gt; *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a410e76d66de629cc20756bf850a9af49" name="a410e76d66de629cc20756bf850a9af49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410e76d66de629cc20756bf850a9af49">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac72b43c7ab0aaa7dbf20c2d33f9cfdeb" name="ac72b43c7ab0aaa7dbf20c2d33f9cfdeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72b43c7ab0aaa7dbf20c2d33f9cfdeb">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;<a class="el" href="#a038836631952085763e93562d8382a39">::reference</a> <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96c353f7e600406bd72db5a69fd81c9e" name="a96c353f7e600406bd72db5a69fd81c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c353f7e600406bd72db5a69fd81c9e">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; &amp; <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9915913d17070af19574070fcb839818" name="a9915913d17070af19574070fcb839818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9915913d17070af19574070fcb839818">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cf5c9b36286d9fe9be379427d1a732a" name="a2cf5c9b36286d9fe9be379427d1a732a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf5c9b36286d9fe9be379427d1a732a">&#9670;&#160;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; &amp; <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa502cc32ba8b47a9f63c29f58e1eb48" name="afa502cc32ba8b47a9f63c29f58e1eb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa502cc32ba8b47a9f63c29f58e1eb48">&#9670;&#160;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4949aee2d5c491aab4faab9697544f01" name="a4949aee2d5c491aab4faab9697544f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4949aee2d5c491aab4faab9697544f01">&#9670;&#160;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;<a class="el" href="#a8cd954401a9b71a1c60c3e2853d5cce5">::pointer</a> <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49250f8cd95090857928df6d2c47c539" name="a49250f8cd95090857928df6d2c47c539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49250f8cd95090857928df6d2c47c539">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_doubly_list_iterator.html">DoublyListIterator</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>include/<a class="el" href="_iterator_8h_source.html">Iterator.h</a></li>
+<li>src/<a class="el" href="_iterator_8cpp.html">Iterator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_doubly_list_iterator.html">DoublyListIterator</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

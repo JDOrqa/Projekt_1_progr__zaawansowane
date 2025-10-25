@@ -1,0 +1,40 @@
+\doxysection{Iterator.\+h}
+\hypertarget{_iterator_8h_source}{}\label{_iterator_8h_source}\index{include/Iterator.h@{include/Iterator.h}}
+\mbox{\hyperlink{_iterator_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ ITERATOR\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ ITERATOR\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iterator>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_doubly_list_iterator_acbc89a06d2d8f9d731bc568792bf3518}{iterator\_category}}\ =\ std::bidirectional\_iterator\_tag;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_doubly_list_iterator_addc30298ab01c6fc8ffefea1a391e59a}{value\_type}}\ =\ T;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_doubly_list_iterator_a038836631952085763e93562d8382a39}{reference}}\ =\ T\&;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}{pointer}}\ =\ T*;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}(\mbox{\hyperlink{struct_node}{Node<T>}}*\ ptr);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a038836631952085763e93562d8382a39}{reference}}\ \mbox{\hyperlink{class_doubly_list_iterator_ac72b43c7ab0aaa7dbf20c2d33f9cfdeb}{operator*}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a8cd954401a9b71a1c60c3e2853d5cce5}{pointer}}\ \mbox{\hyperlink{class_doubly_list_iterator_a4949aee2d5c491aab4faab9697544f01}{operator-\/>}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\&\ \mbox{\hyperlink{class_doubly_list_iterator_a96c353f7e600406bd72db5a69fd81c9e}{operator++}}();\ \ \textcolor{comment}{//\ ++it}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\ \mbox{\hyperlink{class_doubly_list_iterator_a96c353f7e600406bd72db5a69fd81c9e}{operator++}}(\textcolor{keywordtype}{int});\ \textcolor{comment}{//\ it++}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\&\ \mbox{\hyperlink{class_doubly_list_iterator_a2cf5c9b36286d9fe9be379427d1a732a}{operator-\/-\/}}();\ \ \textcolor{comment}{//\ -\/-\/it}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\ \mbox{\hyperlink{class_doubly_list_iterator_a2cf5c9b36286d9fe9be379427d1a732a}{operator-\/-\/}}(\textcolor{keywordtype}{int});\ \textcolor{comment}{//\ it-\/-\/}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_doubly_list_iterator_a49250f8cd95090857928df6d2c47c539}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_doubly_list_iterator_a410e76d66de629cc20756bf850a9af49}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_doubly_list_iterator_a57f87b8fcfe9f4519f80b161397a8baf}{DoublyListIterator}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node<T>}}*\ current;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ITERATOR\_H}}
+
+\end{DoxyCode}

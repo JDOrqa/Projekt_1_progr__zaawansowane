@@ -1,0 +1,9 @@
+# ninja log v5
+3	747	7831053607011418	CMakeFiles/dllist.dir/src/main.cpp.obj	e489fa10d4f6f4d9
+748	1113	7831053609772992	dllist.exe	28d571903408fbc4
+34	669	7831133266984775	CMakeFiles/dllist.dir/src/Iterator.cpp.obj	feedf5ccfe336615
+29	682	7831133267114569	CMakeFiles/dllist.dir/src/NodeFactory.cpp.obj	f127c7284c2a09b4
+25	702	7831133267294276	CMakeFiles/dllist.dir/src/Node.cpp.obj	44cdce55536b56d4
+11	803	7831133268319078	CMakeFiles/dllist.dir/src/main.cpp.obj	e489fa10d4f6f4d9
+37	806	7831133268341683	CMakeFiles/dllist.dir/src/DwukierunkowaLista.cpp.obj	b25c06c39eb36efe
+806	1106	7831133270585828	dllist.exe	fc8ebe9f0854bf83

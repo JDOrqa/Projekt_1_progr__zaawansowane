@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lista dwukierunkowa - Projekt C++: Plik ÅºrÃ³dÅ‚owy include/DwukierunkowaLista.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Lista dwukierunkowa - Projekt C++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocÄ… Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_dwukierunkowa_lista_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowaÅ„</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DwukierunkowaLista.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dwukierunkowa_lista_8h.html">IdÅº do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef DWUKIERUNKOWA_LISTA_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define  DWUKIERUNKOWA_LISTA_H</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_node_factory_8h.html">NodeFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_iterator_8h.html">Iterator.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_dwukierunkowa_lista.html">   22</a></span><span class="keyword">class </span><a class="code hl_function" href="class_dwukierunkowa_lista.html#a87974f9fa7f09b6c171b25f4a661651a">DwukierunkowaLista</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_function" href="class_dwukierunkowa_lista.html#a87974f9fa7f09b6c171b25f4a661651a">DwukierunkowaLista</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="class_dwukierunkowa_lista.html#a3019e70acb032229130b06cb28758d08">~DwukierunkowaLista</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ab26cafaffc067e6bfcce6a4fdb0fdaaf">push_front</a>(<span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ab90bbf0f0209e160586f555849136642">push_back</a>(<span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#a829008139eb6cd74496d48f4f3432652">pop_front</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#a48b8d14ba8f0b31163f1e1fb0af89a6a">pop_back</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ae4b93f12109b553ffad803d6bdf43b42">clear</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#aa356eac4f6e79159592df8d1eedacf4f">empty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#af16f97045de6e1fe72f0402d85beba98">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ad3bf5af67fc6ef9ac37fd4d05555ed38">display_forward</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ae7ddc87665dc45102bf5b2fc94e880bd">display_reverse</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#ab32554d143ba6f7d6d1224fd6e53a8b6">insertAt</a>(<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> T&amp; value);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dwukierunkowa_lista.html#a77c6dd256cec91279d04f02ed1222d1e">removeAt</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    T&amp; <a class="code hl_function" href="class_dwukierunkowa_lista.html#a10317abcf28371bc7b5bf5787a47dcb8">getAt</a>(<span class="keywordtype">size_t</span> index);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_doubly_list_iterator.html">DoublyListIterator&lt;T&gt;</a> <a class="code hl_function" href="class_dwukierunkowa_lista.html#a31f0fdd615f89d3bc0739336b9aaf337">begin</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_doubly_list_iterator.html">DoublyListIterator&lt;T&gt;</a> <a class="code hl_function" href="class_dwukierunkowa_lista.html#a7fa702617a9688ee0032b0fcbabd3da1">end</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// dostêp do surowych wskaŸników (potrzebne do testów / iteracji wstecz)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="struct_node.html">Node&lt;T&gt;</a>* <a class="code hl_function" href="class_dwukierunkowa_lista.html#a790bfad59678333deb8128a565c93ed0">getHead</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="struct_node.html">Node&lt;T&gt;</a>* <a class="code hl_function" href="class_dwukierunkowa_lista.html#aa0bbcd66a2fe6d655ba80243de7586fb">getTail</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_struct" href="struct_node.html">Node&lt;T&gt;</a>* head;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_struct" href="struct_node.html">Node&lt;T&gt;</a>* tail;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>   </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">size_t</span> sz;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif </span></div>
+<div class="ttc" id="a_iterator_8h_html"><div class="ttname"><a href="_iterator_8h.html">Iterator.h</a></div><div class="ttdoc">Deklaracja szablonowego iteratora dla listy dwukierunkowej.</div></div>
+<div class="ttc" id="a_node_factory_8h_html"><div class="ttname"><a href="_node_factory_8h.html">NodeFactory.h</a></div><div class="ttdoc">Deklaracja klasy NodeFactory – wzorzec fabryki do tworzenia wêz³ów listy.</div></div>
+<div class="ttc" id="aclass_doubly_list_iterator_html"><div class="ttname"><a href="class_doubly_list_iterator.html">DoublyListIterator</a></div><div class="ttdoc">Szablonowy iterator klasy DoublyLinkedList.</div><div class="ttdef"><b>Definicja</b> Iterator.h:19</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a10317abcf28371bc7b5bf5787a47dcb8"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a10317abcf28371bc7b5bf5787a47dcb8">DwukierunkowaLista::getAt</a></div><div class="ttdeci">T &amp; getAt(size_t index)</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:141</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a3019e70acb032229130b06cb28758d08"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a3019e70acb032229130b06cb28758d08">DwukierunkowaLista::~DwukierunkowaLista</a></div><div class="ttdeci">~DwukierunkowaLista()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:15</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a31f0fdd615f89d3bc0739336b9aaf337"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a31f0fdd615f89d3bc0739336b9aaf337">DwukierunkowaLista::begin</a></div><div class="ttdeci">DoublyListIterator&lt; T &gt; begin()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:149</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a48b8d14ba8f0b31163f1e1fb0af89a6a"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a48b8d14ba8f0b31163f1e1fb0af89a6a">DwukierunkowaLista::pop_back</a></div><div class="ttdeci">void pop_back()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:57</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a77c6dd256cec91279d04f02ed1222d1e"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a77c6dd256cec91279d04f02ed1222d1e">DwukierunkowaLista::removeAt</a></div><div class="ttdeci">void removeAt(size_t index)</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:127</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a790bfad59678333deb8128a565c93ed0"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a790bfad59678333deb8128a565c93ed0">DwukierunkowaLista::getHead</a></div><div class="ttdeci">Node&lt; T &gt; * getHead() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:156</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a7fa702617a9688ee0032b0fcbabd3da1"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a7fa702617a9688ee0032b0fcbabd3da1">DwukierunkowaLista::end</a></div><div class="ttdeci">DoublyListIterator&lt; T &gt; end()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:152</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a829008139eb6cd74496d48f4f3432652"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a829008139eb6cd74496d48f4f3432652">DwukierunkowaLista::pop_front</a></div><div class="ttdeci">void pop_front()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:46</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_a87974f9fa7f09b6c171b25f4a661651a"><div class="ttname"><a href="class_dwukierunkowa_lista.html#a87974f9fa7f09b6c171b25f4a661651a">DwukierunkowaLista::DwukierunkowaLista</a></div><div class="ttdeci">DwukierunkowaLista()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:12</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_aa0bbcd66a2fe6d655ba80243de7586fb"><div class="ttname"><a href="class_dwukierunkowa_lista.html#aa0bbcd66a2fe6d655ba80243de7586fb">DwukierunkowaLista::getTail</a></div><div class="ttdeci">Node&lt; T &gt; * getTail() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:161</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_aa356eac4f6e79159592df8d1eedacf4f"><div class="ttname"><a href="class_dwukierunkowa_lista.html#aa356eac4f6e79159592df8d1eedacf4f">DwukierunkowaLista::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:80</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ab26cafaffc067e6bfcce6a4fdb0fdaaf"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ab26cafaffc067e6bfcce6a4fdb0fdaaf">DwukierunkowaLista::push_front</a></div><div class="ttdeci">void push_front(const T &amp;value)</div><div class="ttdoc">Dodaje element na pocz¹tek listy.</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:23</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ab32554d143ba6f7d6d1224fd6e53a8b6"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ab32554d143ba6f7d6d1224fd6e53a8b6">DwukierunkowaLista::insertAt</a></div><div class="ttdeci">void insertAt(size_t index, const T &amp;value)</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:110</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ab90bbf0f0209e160586f555849136642"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ab90bbf0f0209e160586f555849136642">DwukierunkowaLista::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:33</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ad3bf5af67fc6ef9ac37fd4d05555ed38"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ad3bf5af67fc6ef9ac37fd4d05555ed38">DwukierunkowaLista::display_forward</a></div><div class="ttdeci">void display_forward() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:86</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ae4b93f12109b553ffad803d6bdf43b42"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ae4b93f12109b553ffad803d6bdf43b42">DwukierunkowaLista::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:68</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_ae7ddc87665dc45102bf5b2fc94e880bd"><div class="ttname"><a href="class_dwukierunkowa_lista.html#ae7ddc87665dc45102bf5b2fc94e880bd">DwukierunkowaLista::display_reverse</a></div><div class="ttdeci">void display_reverse() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:98</div></div>
+<div class="ttc" id="aclass_dwukierunkowa_lista_html_af16f97045de6e1fe72f0402d85beba98"><div class="ttname"><a href="class_dwukierunkowa_lista.html#af16f97045de6e1fe72f0402d85beba98">DwukierunkowaLista::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definicja</b> DwukierunkowaLista.cpp:83</div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdoc">Szablonowa struktura wêz³a listy dwukierunkowej.</div><div class="ttdef"><b>Definicja</b> Node.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a href="_dwukierunkowa_lista_8h.html">DwukierunkowaLista.h</a></li>
+    <li class="footer">Wygenerowano za pomocÄ… <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

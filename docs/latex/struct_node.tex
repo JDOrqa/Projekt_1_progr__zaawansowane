@@ -1,0 +1,90 @@
+\doxysection{Dokumentacja szablonu struktury Node\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}}
+\hypertarget{struct_node}{}\label{struct_node}\index{Node$<$ T $>$@{Node$<$ T $>$}}
+
+
+Szablonowa struktura wêz³a listy dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$Node.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node_ac57506b1a54e5b804f22ae786d3ab737}{Node}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizuj¹cy dane w wêŸle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{struct_node_ac450c71a8677a38d306361f9ced518d3}{data}}
+\item 
+\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_ac953360c5f7ffae6ad13762189d34d9c}{prev}}
+\item 
+\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node_a8bedac90cd0aedd2847dd49f671d4d4a}{next}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegÃ³Å‚owy}
+\subsubsection*{template$<$typename T$>$\newline
+struct Node$<$ T $>$}
+Szablonowa struktura wêz³a listy dwukierunkowej. 
+
+
+\begin{DoxyTemplParams}{Parametry Szablonu}
+{\em T} & Typ danych przechowywany w wêŸle. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-constructors}
+\Hypertarget{struct_node_doc-constructors}
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{struct_node_ac57506b1a54e5b804f22ae786d3ab737}\index{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}}
+\index{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily \label{struct_node_ac57506b1a54e5b804f22ae786d3ab737} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{struct_node}{Node}}$<$ T $>$\+::\+Node (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Konstruktor inicjalizuj¹cy dane w wêŸle. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em value} & Wartoœæ przechowywana w wêŸle. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_node_doc-variable-members}
+\doxysubsection{Dokumentacja atrybutÃ³w skÅ‚adowych}
+\Hypertarget{struct_node_ac450c71a8677a38d306361f9ced518d3}\index{Node$<$ T $>$@{Node$<$ T $>$}!data@{data}}
+\index{data@{data}!Node$<$ T $>$@{Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{struct_node_ac450c71a8677a38d306361f9ced518d3} 
+template$<$typename T$>$ \\
+T \mbox{\hyperlink{struct_node}{Node}}$<$ T $>$\+::data}
+
+\Hypertarget{struct_node_a8bedac90cd0aedd2847dd49f671d4d4a}\index{Node$<$ T $>$@{Node$<$ T $>$}!next@{next}}
+\index{next@{next}!Node$<$ T $>$@{Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{struct_node_a8bedac90cd0aedd2847dd49f671d4d4a} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{struct_node}{Node}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node}{Node}}$<$ T $>$\+::next}
+
+\Hypertarget{struct_node_ac953360c5f7ffae6ad13762189d34d9c}\index{Node$<$ T $>$@{Node$<$ T $>$}!prev@{prev}}
+\index{prev@{prev}!Node$<$ T $>$@{Node$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \label{struct_node_ac953360c5f7ffae6ad13762189d34d9c} 
+template$<$typename T$>$ \\
+\mbox{\hyperlink{struct_node}{Node}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_node}{Node}}$<$ T $>$\+::prev}
+
+
+
+Dokumentacja dla tej struktury zostaÅ‚a wygenerowana z plikÃ³w\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_node_8h}{Node.\+h}}\item 
+src/\mbox{\hyperlink{_node_8cpp}{Node.\+cpp}}\end{DoxyCompactItemize}
