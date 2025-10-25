@@ -62,5 +62,19 @@ int main() {
     list.removeAt(1);
     list.display_forward(); // [1 <-> 3]
 
+    std::cout << "\n===== TEST iterator backward =====\n";
+    DwukierunkowaLista<int> nums;
+    nums.push_back(5);
+    nums.push_back(10);
+    nums.push_back(15);
+
+    auto it = nums.getTail(); // uzyskaj wskaŸnik
+    while (it) {
+        std::cout << it->data << " ";
+        it = it->prev;
+    }
+    std::cout << "\n";
+
+
     return 0;
 }

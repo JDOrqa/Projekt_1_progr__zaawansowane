@@ -36,6 +36,20 @@ public:
         return tmp;
     }
 
+    // pre-decrement
+    DoublyListIterator& operator--() {
+        if (current) current = current->prev;
+        return *this;
+    }
+
+    // post-decrement
+    DoublyListIterator operator--(int) {
+        DoublyListIterator tmp = *this;
+        --(*this);
+        return tmp;
+    }
+
+
     bool operator==(const DoublyListIterator& other) const { return current == other.current; }
     bool operator!=(const DoublyListIterator& other) const { return current != other.current; }
 
