@@ -4,13 +4,30 @@
 #include "NodeFactory.h"
 #include <iostream>
 #include <stdexcept>
+#include "Iterator.h"
 
+/**
+ * @brief Prosta implementacja listy dwukierunkowej (heap allocation).
+ * W tej czêœci implementujemy podstawowe operacje: push_front/back, pop_front/back,
+ * display_forward/reverse, clear, size, empty.
+ *
+ * Metody zwi¹zane z indeksem zostan¹ dodane w drugiej czêœci.
+ */
 
 template<typename T>
 class DwukierunkowaLista {
 public:
     DwukierunkowaLista() : head(nullptr), tail(nullptr), sz(0) {}
     ~DwukierunkowaLista() { clear(); }
+
+
+    // iterator support (forward)
+    DoublyListIterator<T> begin() { return DoublyListIterator<T>(head); }
+    DoublyListIterator<T> end() { return DoublyListIterator<T>(nullptr); }
+
+    // const overloads (opcjonalne)
+    DoublyListIterator<T> begin() const { return DoublyListIterator<T>(head); }
+    DoublyListIterator<T> end() const { return DoublyListIterator<T>(nullptr); }
 
     //  NodeFactory
     void push_front(const T& value) {
@@ -90,6 +107,58 @@ public:
         }
         std::cout << "]\n";
     }
+
+    /**
+ * @brief Wstawia element o zadanym indeksie (0-based)
+ * @throws std::out_of_range jeœli index > size
+ */
+    void insertAt(size_t index, const T& value) {
+        if (index > sz) throw std::out_of_range("Index out of range");
+        if (index == 0) { push_front(value); return; }
+        if (index == sz) { push_back(value); return; }
+
+        Node<T>* current = head;
+        for (size_t i = 0; i < index - 1; ++i)
+            current = current->next;
+
+        Node<T>* newNode = NodeFactory<T>::createNode(value);
+        newNode->next = current->next;
+        newNode->prev = current;
+        current->next->prev = newNode;
+        current->next = newNode;
+        ++sz;
+    }
+
+    /**
+     * @brief Usuwa element o zadanym indeksie
+     * @throws std::out_of_range jeœli index >= size
+     */
+    void removeAt(size_t index) {
+        if (index >= sz) throw std::out_of_range("Index out of range");
+        if (index == 0) { pop_front(); return; }
+        if (index == sz - 1) { pop_back(); return; }
+
+        Node<T>* current = head;
+        for (size_t i = 0; i < index; ++i)
+            current = current->next;
+
+        current->prev->next = current->next;
+        current->next->prev = current->prev;
+        NodeFactory<T>::destroyNode(current);
+        --sz;
+    }
+
+    /**
+     * @brief Zwraca wartoœæ elementu o zadanym indeksie
+     */
+    T& getAt(size_t index) {
+        if (index >= sz) throw std::out_of_range("Index out of range");
+        Node<T>* current = head;
+        for (size_t i = 0; i < index; ++i)
+            current = current->next;
+        return current->data;
+    }
+
 
     
     Node<T>* getHead() const { return head; }

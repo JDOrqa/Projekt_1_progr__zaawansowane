@@ -3,6 +3,10 @@
 
 #include <memory>
 
+/**
+ * @brief Prosty wêze³ listy dwukierunkowej (template).
+ * Doxygen-friendly komentarze.
+ */
 
 template<typename T>
 struct Node {

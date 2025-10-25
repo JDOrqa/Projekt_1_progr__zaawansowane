@@ -3,6 +3,10 @@
 
 #include "Node.h"
 
+/**
+ * @brief Prosta fabryka wêz³ów — wzorzec Factory.
+ * Pozwala odseparowaæ tworzenie wêz³ów (przydatne np. do testów, mocków itp.)
+ */
 
 template<typename T>
 class NodeFactory {
